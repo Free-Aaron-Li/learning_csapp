@@ -12,9 +12,8 @@ set_directory_properties(${PROJECT_SOURCE_DIR}/assert)
 set(SOURCES
         code/main.cpp
         code/show_bytes.cpp
-        include/show_bytes.hpp
-        include/exercise.hpp
         code/exercise.cpp
+        code/C_P.cpp
 )
 
 #------------------------------------

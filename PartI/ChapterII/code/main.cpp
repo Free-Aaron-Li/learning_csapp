@@ -10,6 +10,7 @@
 #include "show_endian.cpp"
 #include "show_bytes.hpp"
 #include "exercise.hpp"
+#include "C_P.hpp"
 
 /**
  * @brief Test: View machine byte sequence pattern.
@@ -41,12 +42,21 @@ test_exercise() {
     std::cout << exercise_2_15(-1, 1);
 }
 
+/**
+ * @brief C_P test.
+ */
+void
+test_C_P() {
+    // C_P48();
+    // C_P49();
+    C_P52();
+}
+
 int
 main() {
     // test_show_endian(); ///< 小端法
-    // test_show_bytes(1234);  ///< d2040000
-    ///< d2040000
-    ///< 8cc6fb6cfc7f000
-    test_exercise();
+    // test_show_bytes(1234);   // d2040000 d2040000 8cc6fb6cfc7f000
+    // test_exercise();
+    test_C_P();
     return 0;
 }

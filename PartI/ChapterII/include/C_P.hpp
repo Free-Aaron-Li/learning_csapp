@@ -15,20 +15,44 @@
 
 /**
  * @brief C_P48 Understanding complement.
+ * @note 2.2.3
  */
 void
 C_P48();
 
 /**
  * @brief C_P49 Forced type conversion.
+ * @note 2.2.4
  */
 void
 C_P49();
 
 /**
- * C_P52 Unsigned and signed.
+ * @brief C_P52 Unsigned and signed.
+ * @note 2.2.5
  */
 void
 C_P52();
+
+/**
+ * @brief Unsigned and signed operations.
+ * @note 2.2.5
+ */
+void
+C_P53();
+
+/**
+ * @brief bit representation of extended digits
+ * @note 2.2.6
+ */
+void
+C_P54();
+
+/**
+ * @brief truncated digit
+ * @note 2.2.7
+ */
+void
+C_P56();
 
 #endif  // CSAPP_C_P_HPP

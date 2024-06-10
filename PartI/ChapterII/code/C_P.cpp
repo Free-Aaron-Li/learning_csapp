@@ -37,6 +37,49 @@ void
 C_P52() {
     int      x = -1;
     unsigned u = 2147483648;
-    printf("x = %u = %d\n", x, x);
-    printf("u = %u = %d\n", u, u);
+    printf("x = %u = %d\n", x, x);  ///< T2U_32(-1)=UMax_32=2^32-1
+    printf("u = %u = %d\n", u, u);  ///< U2T_32(2^31)=2^31-2^32=TMin_32
+}
+
+void
+C_P53() {
+    printf("%d\n", 0 == 0u);
+    printf("%d\n", -1 < 0);
+    printf("%d\n", -1 < 0u);  ///< Forced type casting (implicit)
+    printf("%d\n", 2147483647 > -2147483647 - 1);
+    printf("%d\n", 2147483647u > -2147483647 - 1);   ///< Forced type casting (implicit)
+    printf("%d\n", 2147483647 > (int) 2147483648u);  ///< Forced type casting (implicit)
+    printf("%d\n", -1 > -2);
+    printf("%d\n", (unsigned) -1 > -2);
+}
+
+void
+C_P54() {
+    short          sx  = -12345;  ///< c7 cf
+    unsigned short usx = sx;      ///< c7 cf
+    int            x   = sx;      ///< c7 cf ff ff
+    unsigned       ux  = usx;     ///< c7 cf 00 00
+
+    printf("sx  = %d:\t", sx);
+    show_bytes((byte_pointer) &sx, sizeof(short));
+    printf("usx = %u:\t", usx);
+    show_bytes((byte_pointer) &usx, sizeof(unsigned short));
+    printf("x   = %d:\t", x);
+    show_bytes((byte_pointer) &x, sizeof(int));
+    printf("ux  = %d:\t", ux);
+    show_bytes((byte_pointer) &ux, sizeof(unsigned));
+}
+
+void
+C_P56() {
+    int   x  = 53191;      ///< 53191
+    short sx = (short) x;  ///< -12345
+    int   y  = sx;         ///< -12345
+
+    printf("x  = %d:\t\t", x);
+    show_bytes((byte_pointer) &x, sizeof(int));
+    printf("sx = %d:\t", sx);
+    show_bytes((byte_pointer) &sx, sizeof(short));
+    printf("y  = %d:\t", y);
+    show_bytes((byte_pointer) &y, sizeof(int));
 }

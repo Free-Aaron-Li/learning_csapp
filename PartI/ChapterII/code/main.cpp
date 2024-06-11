@@ -40,7 +40,17 @@ test_show_bytes(int val) {
 void
 test_exercise() {
     // std::cout << exercise_2_15(-1, 1);
-    exercise_2_23(0x00000076);
+    /**
+     * |     w      | fun1 (w) | fun2 (w) |
+     * | :--------: | :------: | :------: |
+     * | 0x00000076 |   118    |   118    |
+     * | 0x87654321 |    33    |    33    |
+     * | 0x000000C9 |   201    |   -55    |
+     * | 0xEDCBA987 |   135    |   -121   |
+     */
+    // exercise_2_23(0xEDCBA987);
+    // exercise_2_25();
+    exercise_2_26();
 }
 
 /**

@@ -11,6 +11,7 @@
 #define CSAPP_EXERCISE_HPP
 
 #include <iostream>
+#include <cstring>
 
 /**
  * @brief x==y is realized only by bit level and logic operation.
@@ -25,10 +26,23 @@ exercise_2_15(int x, int y);
  * @brief Arithmetic and logical operations of complement.
  * @param [in] word unsigned number.
  * @return [out] fun1 and fun2 result string,int[status].
- * @see fun1()
- * @see fun2()
+ * @see fun1(unsigned word)
+ * @see fun2(unsigned word)
  */
 int
 exercise_2_23(const unsigned& word);
 
+/**
+ * @brief Calculate sum_elements results.
+ * @see sum_elements(float a[], unsigned length)
+ */
+void
+exercise_2_25();
+
+/**
+ * @brief Compare string lengths.
+ * @see int strlonger(char *s, char *t)
+ */
+void
+exercise_2_26();
 #endif  // CSAPP_EXERCISE_HPP

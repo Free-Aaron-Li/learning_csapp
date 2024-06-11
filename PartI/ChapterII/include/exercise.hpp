@@ -21,4 +21,14 @@
 int
 exercise_2_15(int x, int y);
 
+/**
+ * @brief Arithmetic and logical operations of complement.
+ * @param [in] word unsigned number.
+ * @return [out] fun1 and fun2 result string,int[status].
+ * @see fun1()
+ * @see fun2()
+ */
+int
+exercise_2_23(const unsigned& word);
+
 #endif  // CSAPP_EXERCISE_HPP

@@ -39,7 +39,8 @@ test_show_bytes(int val) {
  */
 void
 test_exercise() {
-    std::cout << exercise_2_15(-1, 1);
+    // std::cout << exercise_2_15(-1, 1);
+    exercise_2_23(0x00000076);
 }
 
 /**
@@ -59,7 +60,7 @@ int
 main() {
     // test_show_endian(); ///< 小端法
     // test_show_bytes(1234);   // d2040000 d2040000 8cc6fb6cfc7f000
-    // test_exercise();
-    test_C_P();
+    test_exercise();
+    // test_C_P();
     return 0;
 }

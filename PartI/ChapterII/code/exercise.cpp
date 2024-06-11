@@ -46,7 +46,7 @@ exercise_2_23(const unsigned &word) {
 
 /* WARNING: This is buggy code */
 float
-sum_elements(float a[], unsigned length) {
+sum_elements(const float a[], unsigned length) {
     int   i;
     float result = 0;
 

@@ -11,6 +11,8 @@ Language: Cpp
 AccessModifierOffset: -3
 # 开括号(开圆括号、开尖括号、开方括号)后的对齐: Align, DontAlign, AlwaysBreak(总是在开括号后换行)
 AlignAfterOpenBracket: AlwaysBreak
+# 数组初始化对齐
+AlignArrayOfStructures: Right
 # 连续宏定义时，对齐所有宏
 AlignConsecutiveMacros: AcrossComments
 # 连续赋值时，对齐所有等号
